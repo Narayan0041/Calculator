@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater || You Can Find what You Want</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+        <div><h1>Calculator ..</h1></div>
+        <div class="light-mode">
+            <span></span>
+        </div>
+    </div>
+       
+    <div class="container1">
+        <div class="calculater">
+            <div class="first-cont">
+                <div>
+                    <i class='bx bx-menu-alt-left'></i>
+                    <h2>Standard</h2>
+                </div>
+                <div class="user-pic">
+                    <img src="/public/cont2.jpg" alt="">
+                </div>
+            </div>
+            <form>
+            <div class="display-con">
+                <input type="text" name="display" placeholder="0" class="input">
+            </div>
+            <div class="text1">
+                <input type="button" value="M1" class="ms">
+                <input type="button" value="MR" class="ms">
+                <input type="button" value="M+" class="ms">
+                <input type="button" value="M-" class="ms">
+                <input type="button" value="MR" class="ms">
+            </div>
+            <div class="board">
+                <input type="button" value="%" class="btn" onclick="display.value +='%'">
+                <input type="button" value="CE" class="btn" onclick="display.value =''">
+                <input type="button" value="AC" class="btn" onclick="display.value =display.value.toString().slice(0,-1)">
+                <input type="button" value="/" class="btn" onclick="display.value +='/'">
+            </div>
+            <div class="board">
+                <input type="button" value="7" class="btn" onclick="display.value +='7'">
+                <input type="button" value="8" class="btn" onclick="display.value +='8'">
+                <input type="button" value="9" class="btn" onclick="display.value +='9'">
+                <input type="button" value="X" class="btn" onclick="display.value +='*'">
+            </div>
+            <div class="board">
+                <input type="button" value="4" class="btn" onclick="display.value +='4'">
+                <input type="button" value="5" class="btn" onclick="display.value +='5'">
+                <input type="button" value="6" class="btn" onclick="display.value +='6'">
+                <input type="button" value="-" class="btn" onclick="display.value +='-'">
+            </div>
+            <div class="board">
+                <input type="button" value="1" class="btn" onclick="display.value +='1'">
+                <input type="button" value="2" class="btn" onclick="display.value +='2'">
+                <input type="button" value="3" class="btn" onclick="display.value +='3'">
+                <input type="button" value="+" class="btn" onclick="display.value +='+'">
+            </div>
+            
+            <div class="board">
+                <input type="button" value="00" class="btn" onclick="display.value +='00'">
+                <input type="button" value="0" class="btn" onclick="display.value +='0'">
+                <input type="button" value="." class="btn" onclick="display.value +='.'">
+                <input type="button" value="=" class="btn1" onclick="display.value = eval(display.value)">
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

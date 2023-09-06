@@ -1,0 +1,169 @@
+:root{
+    --body-color:rgb(2, 8, 31);
+    --background-color:rgb(33, 28, 42);
+    --font-color:white;
+    --violet-color:rgb(158, 58, 225);
+    --box-shadow:.2px .3px 1rem rgb(4, 4, 69);
+    --box-inside:.2px .1px 1rem rgb(144, 139, 139);
+    --bbox-shadow:rgba(82, 3, 90, 0.1);
+}
+.lightm{
+    --body-color:rgb(63, 63, 63);
+    --background-color:white;
+    --font-color:black;
+    --violet-color:white;
+    --box-shadow:0.5px 0.8px 2rem rgb(168, 167, 167);
+    --bbox-shadow:rgba(255, 255, 255,.1)
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .3s linear;
+}
+html{
+    font-size: 62.2%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7px;
+}
+body{
+    background-color: var(--body-color);
+}
+.user-pic img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav div h1{
+    padding: 2rem 3rem;
+    font-size: 4rem;
+    color: var(--font-color);
+}
+.light-mode{
+    cursor: pointer;
+    display: flex;
+    background-color: gray;
+    height: 2.7vh;
+    margin: 2rem 3rem;
+    border-radius: 2rem;
+    width: 2.2vw;
+    transition: padding-left .3s linear , background-color .3s linear;
+}
+.light-mode span{
+    position: relative;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: .23rem;
+    margin-left: .4rem;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+}
+.light{
+    padding-left: 1.2rem;
+    background-color: rgb(8, 8, 81);
+}
+
+
+.container{
+    margin-top: 0px;
+    height: 80vh;
+    border-radius: 100% 0% 0% 100% / 0% 100% 0% 100% ;
+    background-color: var(--violet-color);
+}
+.container1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculater{
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 20%;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+}
+.first-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 2rem 1.8rem;
+}
+.first-cont text{
+    background-color: transparent;
+}
+.first-cont div i{
+    color: var(--font-color);
+    font-size:2.5rem;
+    margin-right: 1rem;
+}
+.first-cont div h2{
+    display: inline;
+    color: var(--font-color);
+    font-size: 2rem;
+
+}
+.display-con{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10vh;
+    /* font-size: 4rem;
+    background-color: transparent; */
+}
+.display-con input{
+    flex: 1;
+    font-size: 3rem;
+    color: gray;
+    text-align: right;
+    background-color: transparent;
+    cursor: pointer;
+}
+.text1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.text1 input{
+    display: flex;
+    color: var(--font-color);
+    background-color: transparent;
+}
+.board .btn{
+   width: 4.5rem;
+   height: 4.5rem;
+   border-radius: 1rem;
+   margin-top: 1.5rem;
+   margin-right: 1.2rem;
+   margin-left: 1.2rem;
+   font-size: 2.5rem;
+   box-shadow:-8px -8px 10px rgba(255, 255, 255,.1), -8px -8px 10px rgba(82, 3, 90, 0.1);
+   color:var(--font-color);
+   background-color: transparent;
+   cursor: pointer;
+}
+.board .btn:hover{
+    background-color: var(--violet-color);
+}
+.board .btn1{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    margin-right: 1.5rem;
+    margin-left: .8rem;
+    font-size: 3rem;
+    box-shadow: -8px -8px 10px rgba(255, 255, 255,.1), -8px -8px 10px rgba(82, 3, 90, 0.1);
+    color:var(--font-color);
+    background-color:var(--violet-color);
+    cursor: pointer;
+ }
